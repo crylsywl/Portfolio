@@ -1,0 +1,96 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+/* Navbar transparent by default */
+.navbar {
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Transparent navbar */
+.navbar-transparent {
+    background-color: transparent;
+}
+
+/* Solid navbar when scrolled */
+.navbar-solid {
+    background-color: #fffcf6;
+}
+
+
+.hero {
+    background: url(bg3.png) no-repeat center center/cover;
+    height: 100vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero h1 {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.hero span {
+    color: #fb0044;
+}
+
+#about h2, #projects h2, #contact h2 {
+    margin-bottom: 30px;
+    font-size: 36px;
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+h2 {
+    font-family: serif;
+    color: #002664;
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+    width: 100%;
+}
+
+
+
+/* Style untuk bagian logo */
+#products-logos {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px 0;
+    width: 100%;
+    position: absolute; /* Position logo section at the bottom of hero */
+    gap: 100px;
+}
+
+.logo-container img {
+    height: 40px; /* Control the height */
+    width: 80px;  /* Let width adjust automatically */
+    object-fit: contain; /* Keep the aspect ratio */
+    opacity: 1; /* Make logos slightly transparent */
+    transition: opacity 0.3s ease; /* Smooth hover effect */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Membuat card sedikit membesar saat di-hover */
+    transition: 0.3s ease; /* Menambahkan efek transisi */
+}
+
+/* Membuat card dengan tinggi yang sama */
+.card {
+    display: flex;
+    flex-direction: column;  /* Mengatur elemen di dalam card secara vertikal */
+    height: 100%;            /* Pastikan card menempati seluruh tinggi yang tersedia */
+}
+
+.card-body {
+    flex-grow: 1;            /* Bagian body akan mengambil sisa ruang yang tersedia */
+}

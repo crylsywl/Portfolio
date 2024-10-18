@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-transparent">
+        <div class="container-fluid"> 
+            <a class="navbar-brand" href="#" style="color: #1c002a;">MyPortfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about" style="color: #1c002a;" >About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects" style="color: #1c002a;">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact" style="color: #1c002a;">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero text-center">
+        <div class="container">
+            <h1 style="color: black;">Hello, I'm <span>Cryl Syawal</span></h1>
+            <p style="color: #002664;">A Passionate Web Developer and UI/UX designer</p>
+            <a href="#projects" class="btn btn-primary" style="background-color: #fb0044; color: white; border: none;">View My Work</a>
+        </div>
+    </section>
+
+    <!-- Logos Section (Inside Hero) -->
+    <div id="products-logos" class="d-flex justify-content-center align-items-center position-absolute">
+        <div class="logo-container mx-3">
+            <img src="Figma.png" alt="Google" class="img-fluid">
+        </div>
+        <div class="logo-container mx-3">
+            <img src="Canva.png" alt="Nike" class="img-fluid">
+        </div>
+        <div class="logo-container mx-3">
+            <img src="HTML.png" alt="Samsung" class="img-fluid">
+        </div>
+        <div class="logo-container mx-3">
+            <img src="CSS.png" alt="Apple" class="img-fluid">
+        </div>
+        <div class="logo-container mx-3">
+            <img src="JS.png" alt="Adidas" class="img-fluid">
+        </div>
+    </div>
+</section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5 text-center" style="background-color: #fffcf6;">
+        <div class="container" style=" color:black;">
+            <h2>About Me</h2>
+            <img src="cryl.jpg" alt="Cryl Syawal" class="img-fluid rounded-circle mb-3" width="150">
+            <p>I am Cryl Syawal, a UI/UX designer and web developer with a strong passion for creating intuitive and enjoyable digital experiences. With experience in designing functional user interfaces and conducting user research, I focus on developing effective digital solutions. I have completed a UI/UX Research and Design certification program and have been involved in various projects, from research to front-end development. I am always open to collaborating on meaningful and challenging projects.</p>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-5 text-center" style="background-color: #fff1ee;" >
+        <div class="container">
+            <h2>My Projects</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <a href="https://www.figma.com/design/ZM1sMt9TJafhFZUB5q2tKY/Shopee-Revamp-Final-Project-A-3?node-id=1-190&t=ZGR2qpmKbm4iqnvW-1" class="card mb-4 shadow-sm text-decoration-none">
+                        <img src="Thumbnail.jpg" alt="Project 1 Image" class="card-img-top img-fluid">
+                        <div class="card-body">
+                            <h5 class="card-title" >Revamp Shopee</h5>
+                            <p class="card-text">Proyek revamp Shopee bertujuan meningkatkan pengalaman pengguna dengan menggabungkan tab 'live' dan 'video' menjadi 'social', memperbarui desain kartu produk, serta menyederhanakan informasi dan notifikasi pada halaman pembayaran untuk menciptakan pengalaman berbelanja yang lebih modern dan intuitif.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6">
+                    <a href="https://www.figma.com/design/gRWFUY6dn9h16x5uBAtwuB/EaseMindly?node-id=1040-1544&t=q2lzhIZSkW36oya1-1" class="card mb-4 shadow-sm text-decoration-none">
+                        <img src="Thumbnail2.jpg" alt="Project 2 Image" class="card-img-top img-fluid">
+                        <div class="card-body">
+                            <h5 class="card-title">EaseMindly</h5>
+                            <p class="card-text">Proyek Mini Challenge Ease Mindly adalah inisiatif yang dirancang untuk membantu individu mengelola stres melalui serangkaian tantangan interaktif dan kegiatan yang mempromosikan relaksasi, mindfulness, dan kesejahteraan mental, dengan tujuan menciptakan lingkungan yang mendukung pengelolaan emosi secara positif dan efektif.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 text-center">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>Email: contact.crylsyawal@gmail.com</p>
+            <p>LinkedIn: Cryl Syawal</p>
+        </div>
+    </section>
+
+    <footer class="text-center py-3 bg-dark text-white">
+        <p>&copy; 2024 Cryl Syawal</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JavaScript to change navbar on scroll -->
+    <script>
+        window.onscroll = function() {
+            var navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.remove('navbar-transparent');
+                navbar.classList.add('navbar-solid');
+            } else {
+                navbar.classList.remove('navbar-solid');
+                navbar.classList.add('navbar-transparent');
+            }
+        };
+    </script>
+</body>
+</html>
